@@ -1,0 +1,88 @@
+import { Navigate } from "react-router-dom";
+
+import AuthLayout from "@/layouts/AuthLayout";
+import DashboardLayout from "@/layouts/DashboardLayout";
+import ForgotPassword from "@/pages/auth/ForgotPassword";
+import Login from "@/pages/auth/Login";
+import Register from "@/pages/auth/Register";
+import ResetPassword from "@/pages/auth/ResetPassword";
+import VerifyCode from "@/pages/auth/VerifyCode";
+
+import Dashboard from "@/pages/dashboard/Dashboard";
+import Setting from "@/pages/dashboard/Setting";
+import Wallet from "@/pages/dashboard/Wallet";
+import Reports from "@/pages/dashboard/Reports";
+import LandingPage from "@/pages/LandingPage";
+
+import { DEFAULT_LOCALE } from "./i18n/i18n/constant";
+import I18nProvider from "./i18n/i18n/I18nProvider";
+
+export const routes = [
+    {
+        path: "/",
+        element: <Navigate to={`/${DEFAULT_LOCALE}`} replace />,
+    },
+
+    {
+        path: "/:locale",
+        element: <I18nProvider />,
+        children: [
+            {
+                index: true,
+                element: <LandingPage />,
+            },
+            {
+                element: <AuthLayout />,
+                children: [
+                    {
+                        path: "register",
+                        element: <Register />,
+                    },
+                    {
+                        path: "login",
+                        element: <Login />,
+                    },
+                    {
+                        path: "forgot-password",
+                        element: <ForgotPassword />,
+                    },
+                    {
+                        path: "reset-password",
+                        element: <ResetPassword />,
+                    },
+                    {
+                        path: "verify-code",
+                        element: <VerifyCode />,
+                    },
+                   
+                ],
+            },
+
+            {
+                
+                    
+                        element: <DashboardLayout />,
+                        children: [
+                            {
+                                path: "dashboard",
+                                element: <Dashboard />,
+                            },
+                            {
+                                path: "setting",
+                                element: <Setting />,
+                            },
+                            {
+                                path: "wallet",
+                                element: <Wallet />,
+                            },
+                            {
+                                path: "reports",
+                                element: <Reports />,
+                            },
+                        ],
+                
+                
+            },
+        ],
+    },
+];

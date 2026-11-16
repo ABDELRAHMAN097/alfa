@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Alfa Care Brand Colors */
+  --color-alfa-green: #88a531;
+  --color-alfa-hover: #738f25;
+  --color-alfa-light: #bdd342;
+  --color-alfa-dark: #556e17;
+  --color-alfa-soft: #f4f8eb;
+  --color-alfa-border: #d6e5a8;
+
+  /* Theme Defaults aligned to Alfa Care */
+  --color-primary-color: #88a531;
+  --color-primary-hover: #738f25;
+  --color-secondary-color: #111827;
+  --color-accent: #bdd342;
+
+  /* Backgrounds */
+  --color-background: #0B0C10;
+  --color-surface: #111827;
+  --color-card: #1F2937;
+
+  /* Text */
+  --color-text-primary: #F9FAFB;
+  --color-text-secondary: #9CA3AF;
+  --color-text-muted: #6B7280;
+
+  /* Border */
+  --color-border: #374151;
+
+  /* States */
+  --color-success: #88a531;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  /* WhatsApp & Hotline */
+  --color-whatsapp: #25D366;
+  --color-hotline: #88a531;
+
+  /* Fonts */
+  --font-primary: "Cairo", "Tajawal", sans-serif;
+  --font-secondary: "Tajawal", "Cairo", sans-serif;
+}
+
+:root {
+  --alfa-green: #88a531;
+  --alfa-green-hover: #738f25;
+  --alfa-green-light: #bdd342;
+  --alfa-green-dark: #556e17;
+  --alfa-green-soft: #f4f8eb;
+  --alfa-green-border: #d6e5a8;
+}
+
+
+/* Base Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background-color: #ffffff;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+body.locale-ar {
+  font-family: "Cairo", "Tajawal", sans-serif;
+  direction: rtl;
+}
+
+body.locale-en {
+  font-family: "Cairo", sans-serif;
+}
+
+/* =========================================================
+   UTILITIES
+========================================================= */
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-alfa {
+  background-color: var(--alfa-green);
+}
+
+.bg-alfa-light {
+  background-color: var(--alfa-green-light);
+}
+
+.bg-alfa-soft {
+  background-color: var(--alfa-green-soft);
+}
+
+.text-alfa {
+  color: var(--alfa-green);
+}
+
+.border-alfa {
+  border-color: var(--alfa-green);
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
