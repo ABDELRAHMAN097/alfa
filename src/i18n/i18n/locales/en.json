@@ -51,7 +51,188 @@
     "contact": "Contact Us",
     "login": "Login",
     "dashboard": "Dashboard",
-    "profile": "Profile",
-    "bookNow": "Book Now"
+    "profile": "Medical File",
+    "bookNow": "Book Appointment",
+    "hotline": "Hotline: 15662",
+    "logout": "Logout"
+  },
+  "logoutModal": {
+    "title": "Confirm Logout",
+    "description": "Are you sure you want to log out of your Alfa Care account?",
+    "confirm": "Confirm Logout",
+    "cancel": "Cancel",
+    "loggingOut": "Logging out..."
+  },
+  "landing": {
+    "hero": {
+      "title": "Alfa Care",
+      "subtitle": "The First Physical Therapy Chain in Egypt"
+    },
+    "quickCards": {
+      "bookingTitle": "Book an Appointment",
+      "phonePlaceholder": "Phone Number",
+      "areaSelect": "Area",
+      "areaCairo": "Cairo",
+      "areaGiza": "Giza",
+      "areaOther": "Other",
+      "emailPlaceholder": "Email Address",
+      "submitButton": "Book Available Appointment",
+      "branchesTitle": "Our Branches",
+      "branchesButton": "Click here to view branches",
+      "contactTitle": "Contact Us",
+      "contactDesc1": "You can reach our hotline all week",
+      "contactDesc2": "From 10 AM to 10 PM"
+    },
+    "about": {
+      "title": "Who We Are",
+      "highlight": "Alfa Care 15 Years in Egypt!",
+      "desc1": "Top physical therapy experts with you for 15 years across 25 branches in Egypt to eliminate pain.",
+      "desc2": "From initial examination, Alfa Care specialists design your tailored treatment plan with state-of-the-art equipment, exercises, and manual therapy by Egypt's top specialists.",
+      "features": {
+        "booking": {
+          "title": "Easy Booking",
+          "desc": "Book your appointment in simple steps"
+        },
+        "team": {
+          "title": "Qualified Team",
+          "desc": "Over 25 years of experience"
+        },
+        "schedule": {
+          "title": "Flexible Schedule",
+          "desc": "Our doctors are always available"
+        },
+        "price": {
+          "title": "Best Price Guarantee",
+          "desc": "No overpriced services"
+        }
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "allServices": "All Services",
+      "items": {
+        "backJoint": {
+          "title": "Back & Joint Pain Treatment",
+          "desc": "Effective solutions for spine, knee, and joint pain relief."
+        },
+        "corrective": {
+          "title": "Corrective & Rehab Exercises",
+          "desc": "Custom exercise programs to improve posture and relieve musculoskeletal issues."
+        },
+        "manual": {
+          "title": "Manual Therapy",
+          "desc": "Specialized hands-on techniques to relieve pain and improve joint and muscle mobility."
+        },
+        "rehab": {
+          "title": "Post-Injury Rehabilitation",
+          "desc": "Comprehensive recovery support after sports injuries or accidents for a safe return to daily life."
+        },
+        "general": {
+          "title": "General Physical Therapy",
+          "desc": "Comprehensive physical therapy services to maintain your physical wellness."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Patient Reviews",
+      "items": {
+        "client1": {
+          "name": "Mayza El-Saeed",
+          "text": "A very professional team paying attention to every detail, great improvement in muscle flexibility and posture."
+        },
+        "client2": {
+          "name": "Mr. Ahmed Mostafa",
+          "text": "I suffered from severe back pain due to long hours at the desk. After several therapy sessions, my mobility improved and pain decreased significantly. Thanks to the amazing team!"
+        },
+        "client3": {
+          "name": "Ms. Sara Farouk",
+          "text": "I injured my knee during sports, but thanks to regular sessions and continuous follow-up, my recovery was remarkable."
+        }
+      }
+    },
+    "branches": {
+      "badge": "Our Branches in Egypt",
+      "title": "Closer Than You Think.. Branches Covering Egypt",
+      "desc": "Equipped with state-of-the-art medical technology to welcome you all week with utmost comfort.",
+      "hotline": "Hotline",
+      "whatsapp": "WhatsApp Chat",
+      "items": {
+        "nasrCity": {
+          "city": "Cairo",
+          "name": "Nasr City Branch",
+          "address": "Abbas El-Akkad St., beside National Bank, Doctors Tower - 3rd Floor",
+          "hours": "Daily from 9 AM to 10 PM"
+        },
+        "mohandessin": {
+          "city": "Giza",
+          "name": "Mohandessin Branch",
+          "address": "Gamet El-Dowel El-Arabiya St., in front of Mostafa Mahmoud Mosque - 2nd Floor",
+          "hours": "Daily from 9 AM to 10 PM"
+        },
+        "tagamoa": {
+          "city": "New Cairo",
+          "name": "Fifth Settlement Branch",
+          "address": "North 90th St., Medical Park Premier, Clinic 204",
+          "hours": "Daily from 10 AM to 10 PM"
+        },
+        "maadi": {
+          "city": "Cairo",
+          "name": "Maadi Branch",
+          "address": "El-Nasr St., Degla Maadi, next to Carrefour Maadi, El-Hayah Tower",
+          "hours": "Daily from 9 AM to 9 PM"
+        },
+        "zayed": {
+          "city": "Giza",
+          "name": "Sheikh Zayed Branch",
+          "address": "Dahshur Link, Capital Business Park, Building B4",
+          "hours": "Daily from 10 AM to 10 PM"
+        },
+        "smouha": {
+          "city": "Alexandria",
+          "name": "Smouha Branch",
+          "address": "Fawzy Moaz St., Ali Bin Abi Taleb Sq., Chemists Tower",
+          "hours": "Daily from 9 AM to 9 PM"
+        }
+      }
+    },
+    "doctors": {
+      "allDoctors": "All Doctors",
+      "bannerTitle": "Book Appointment Now",
+      "bannerDesc": "Book your session online\nand save your time!",
+      "items": {
+        "hadad": {
+          "name": "Dr. Mohamed Haddad",
+          "specialty": "Physical Therapy Specialist for Scoliosis and Spine Deformities"
+        },
+        "mansour": {
+          "name": "Dr. Abdelkhalek Mansour",
+          "specialty": "Shoulder Injuries Expert"
+        },
+        "shafey": {
+          "name": "Dr. Omar El-Shafei",
+          "specialty": "Spine Injuries and Deformities Expert"
+        },
+        "helmy": {
+          "name": "Dr. Mohamed Helmy",
+          "specialty": "Physical Therapy Consultant for Spine Conditions"
+        }
+      }
+    },
+    "footer": {
+      "contactTitle": "Contact Us",
+      "eventsTitle": "Latest Events",
+      "event1": "Contract with SEHAONE",
+      "event1Date": "November 21, 2024",
+      "event2": "Contract with RELIANCE HEALTH",
+      "event2Date": "September 18, 2024",
+      "messageTitle": "Send a Message",
+      "messagePlaceholder": "Your message",
+      "emailPlaceholder": "Your email address",
+      "send": "Send",
+      "copyright": "Alfa Care © {year}. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "themeLabel": "Theme:",
+      "followUs": "Follow Us"
+    }
   }
 }

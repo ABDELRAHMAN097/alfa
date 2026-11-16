@@ -8,10 +8,16 @@ import LandingBranches from "@/components/landing/LandingBranches";
 import LandingDoctors from "@/components/landing/LandingDoctors";
 import LandingFooterInfo from "@/components/landing/LandingFooterInfo";
 import LandingFooterBottom from "@/components/landing/LandingFooterBottom";
+import { useI18n } from "@/i18n/i18n/context";
 
 export default function LandingPage() {
+  const { dir } = useI18n();
+
   return (
-    <div className="min-h-screen bg-white text-gray-900 flex flex-col font-sans" dir="rtl">
+    <div
+      className="min-h-screen bg-white dark:bg-[#0f141c] text-gray-900 dark:text-gray-100 flex flex-col font-sans transition-colors duration-300"
+      dir={dir}
+    >
       <NavbarLanding />
       <main className="flex-1">
         <LandingHero />

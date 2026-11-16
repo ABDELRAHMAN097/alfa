@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@300;400;500;700;800;900&display=swap');
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Alfa Care Brand Colors */
   --color-alfa-green: #88a531;
@@ -20,6 +22,12 @@
   --color-background: #0B0C10;
   --color-surface: #111827;
   --color-card: #1F2937;
+
+  /* Eye-friendly Dark Mode Palette */
+  --color-dark-bg: #0f141c;
+  --color-dark-surface: #141b24;
+  --color-dark-card: #182230;
+  --color-dark-border: #243142;
 
   /* Text */
   --color-text-primary: #F9FAFB;
@@ -52,7 +60,6 @@
   --alfa-green-border: #d6e5a8;
 }
 
-
 /* Base Body Styles */
 body {
   margin: 0;
@@ -61,6 +68,13 @@ body {
   background-color: #ffffff;
   color: #1f2937;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Eye-Friendly Dark Mode Body Styles */
+html.dark, body.dark {
+  background-color: #0f141c;
+  color: #f3f4f6;
 }
 
 body.locale-ar {
@@ -104,6 +118,7 @@ body.locale-en {
 .border-alfa {
   border-color: var(--alfa-green);
 }
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
