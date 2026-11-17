@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FiMenu, FiX, FiPhoneCall, FiUser } from "react-icons/fi";
 import { RiLogoutBoxRLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAuth } from "@/context/AuthContext";
+// import { useAuth } from "@/context/AuthContext";
 import { useI18n } from "@/i18n/i18n/context";
 import AlfaLogo from "./common/AlfaLogo";
 import ThemeToggle from "./common/ThemeToggle";

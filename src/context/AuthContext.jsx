@@ -72,20 +72,30 @@ export function AuthProvider({ children }) {
       }
     } catch (e) {}
 
-    const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
-      if (currentUser) {
-        await syncProfile(currentUser);
-      } else {
-        // If not in Firebase auth, check if localStorage has manual session
-        const local = localStorage.getItem("talep_user");
-        if (!local) {
-          setUser(null);
-          setProfile(null);
-          setRole(null);
-        }
+    let unsubscribe = () => {};
+    if (auth) {
+      try {
+        unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
+          if (currentUser) {
+            await syncProfile(currentUser);
+          } else {
+            // If not in Firebase auth, check if localStorage has manual session
+            const local = localStorage.getItem("talep_user");
+            if (!local) {
+              setUser(null);
+              setProfile(null);
+              setRole(null);
+            }
+          }
+          setLoading(false);
+        });
+      } catch (e) {
+        console.warn("Firebase onAuthStateChanged error:", e);
+        setLoading(false);
       }
+    } else {
       setLoading(false);
-    });
+    }
 
     setLoading(false);
 

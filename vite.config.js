@@ -17,13 +17,13 @@ export default defineConfig(({ mode }) => {
   const apiKey = (
     env.CLOUDINARY_API_KEY ||
     process.env.CLOUDINARY_API_KEY ||
-    "181285968731254"
+    "572185387652824"
   ).trim();
 
   const apiSecret = (
     env.CLOUDINARY_API_SECRET ||
     process.env.CLOUDINARY_API_SECRET ||
-    "TJTUTGw2KkiFiwpGdC9duIOxIBs"
+    "eh8AFjMNKk9WbhS1ycPkkBjNMkQ"
   ).trim();
 
   const setupDeleteApi = (middlewares) => {
