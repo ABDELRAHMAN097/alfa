@@ -13,6 +13,7 @@ import Setting from "@/pages/dashboard/Setting";
 import Wallet from "@/pages/dashboard/Wallet";
 import Reports from "@/pages/dashboard/Reports";
 import LandingPage from "@/pages/LandingPage";
+import RouteErrorBoundary from "@/components/common/RouteErrorBoundary";
 
 import { DEFAULT_LOCALE } from "./i18n/i18n/constant";
 import I18nProvider from "./i18n/i18n/I18nProvider";
@@ -21,11 +22,23 @@ export const routes = [
     {
         path: "/",
         element: <Navigate to={`/${DEFAULT_LOCALE}`} replace />,
+        errorElement: <RouteErrorBoundary />,
+    },
+    {
+        path: "/reset-password",
+        element: <Navigate to={`/${DEFAULT_LOCALE}/reset-password${typeof window !== "undefined" ? window.location.search : ""}`} replace />,
+        errorElement: <RouteErrorBoundary />,
+    },
+    {
+        path: "/__/auth/action",
+        element: <Navigate to={`/${DEFAULT_LOCALE}/reset-password${typeof window !== "undefined" ? window.location.search : ""}`} replace />,
+        errorElement: <RouteErrorBoundary />,
     },
 
     {
         path: "/:locale",
         element: <I18nProvider />,
+        errorElement: <RouteErrorBoundary />,
         children: [
             {
                 index: true,
